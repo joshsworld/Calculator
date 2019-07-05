@@ -1,0 +1,162 @@
+html{
+    font: 16/1.5 Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+button{
+    width: 100%;
+    font-size: 1.4rem;
+    border: 1px solid #000;
+}
+
+button:hover{
+    border: 2px solid black;
+}
+
+.calculator{
+    margin: 50px 20% 0 20%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 75px);
+    width: 500px;
+    background: #b8b8b8;
+    padding: .5rem;
+    align-items: center;
+}
+
+
+.display{
+    background: #fff;
+    font-size: 1.8rem;
+    font-family: Helvetica;
+    height: 2.2rem;
+    padding: .5rem;
+    border: 1px solid gray;
+}
+
+.keys{
+    padding:5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 50px);
+    grid-gap: 5px;
+    font-family: Helvetica;
+}
+
+
+/* Numbers */
+#num1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: #fff;
+}
+
+#num2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background: #fff;
+}
+
+#num3{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background: #fff;
+}
+
+#num4{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background: #fff;
+}
+
+#num5{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background: #fff;
+}
+
+#num6{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background: #fff;
+}
+
+#num7{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    background: #fff;
+}
+
+#num8{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background: #fff;
+}
+
+#num9{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    background: #fff;
+}
+
+#num0{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    background: #fff;
+}
+
+/* AC Button */
+#cancel{
+    grid-column: 3/4;
+    grid-row: -2/-1;
+    background: rgb(150, 255, 88);
+}
+
+/* Decimal */
+#decimal{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    background: #fff;
+}
+
+
+/*** Operators ***/
+#equals{
+    grid-column: 4/5;
+    grid-row: 2/6;
+    background: rgb(255, 181, 45);
+}
+
+/* Addition Button */
+#plus{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background: #9c9c9c;
+}
+
+/* Subtraction Button */
+
+#minus{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background: #9c9c9c;
+}
+
+/* Multiplication Button */
+#multiply{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background: #9c9c9c;
+}
+
+/* Division Button */
+#divide{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background: #9c9c9c;
+}
+
+.pressed{
+    border: 2px solid black;
+}
+
